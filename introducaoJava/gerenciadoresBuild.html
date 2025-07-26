@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciadores de Build em Java</title>
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    />
+</head>
+
+<body>
+
+    <div class="container my-5">
+        <div class="card p-4 shadow-sm">
+            <h1 class="mb-4">Entendendo o que são gerenciadores de build</h1>
+
+            <p><strong>Neste conteúdo você vai aprender:</strong></p>
+            <ul>
+                <li>O que é o processo de build e sua importância na programação</li>
+                <li>O que são gerenciadores de build e como eles facilitam o desenvolvimento</li>
+                <li>Quais são os principais gerenciadores de build usados em Java: Maven e Gradle</li>
+                <li>Características e diferenças entre Maven e Gradle</li>
+                <li>Como instalar e configurar o Maven e o Gradle no seu sistema</li>
+                <li>A importância das variáveis de ambiente e como configurá-las</li>
+            </ul>
+
+            <hr />
+
+            <h2>O que é "build"?</h2>
+            <p>
+                No contexto da programação, <strong>build</strong> é o processo de transformar o código-fonte
+                em algo que possa ser executado ou distribuído. Isso inclui compilar arquivos <code>.java</code> em
+                <code>.class</code>, gerenciar dependências, rodar testes automatizados e empacotar o projeto
+                como um <code>.jar</code> ou <code>.war</code>.
+            </p>
+            <p>
+                Automatizar esse processo reduz erros e economiza tempo. É aí que entram os
+                <strong>gerenciadores de build</strong>.
+            </p>
+
+            <h2>O que é um gerenciador de build?</h2>
+            <p>
+                Um gerenciador de build <strong>automatiza</strong> e <strong>organiza</strong> o processo de
+                construção de um projeto. Com ele, você define o que deve ser feito, e ele executa tudo em ordem.
+            </p>
+
+            <hr />
+
+            <h2>Principais gerenciadores de build em Java</h2>
+            <p>
+                Em projetos Java, é comum compilar código, rodar testes, empacotar arquivos e gerenciar bibliotecas.
+                Fazer isso manualmente é cansativo e propenso a erros — por isso usamos ferramentas como
+                <strong>Maven</strong> e <strong>Gradle</strong>.
+            </p>
+
+            <h3>Maven</h3>
+            <p>
+                Ferramenta tradicional, muito usada no mercado. Baseia-se em XML e adota o princípio de
+                <strong>"convenção sobre configuração"</strong>.
+            </p>
+
+            <h3>Gradle</h3>
+            <p>
+                Mais moderno e flexível que o Maven. Usa scripts Groovy ou Kotlin no arquivo <code>build.gradle</code>,
+                permitindo mais personalização.
+            </p>
+
+            <hr />
+
+            <h2>Instalação do Maven e do Gradle</h2>
+            <p>
+                Após baixar e extrair a ferramenta, é essencial configurar as <strong>variáveis de ambiente</strong>.
+                Isso permite usar os comandos <code>mvn</code> ou <code>gradle</code> no terminal de qualquer pasta.
+            </p>
+
+            <div class="p-3 my-4 border rounded bg-light">
+                <p>💡 As <strong>variáveis de ambiente</strong> ajudam o sistema operacional a localizar ferramentas.
+                </p>
+                <p>Tipos de variáveis:</p>
+                <ul>
+                    <li><strong>Do usuário</strong>: afetam apenas o usuário atual.</li>
+                    <li><strong>Do sistema</strong>: afetam todos os usuários do computador.</li>
+                </ul>
+            </div>
+
+            <h3>Configuração das variáveis de ambiente</h3>
+            <p>
+                Ao instalar, crie a variável <code>MAVEN_HOME</code> ou <code>GRADLE_HOME</code> apontando para
+                a pasta raiz da ferramenta (exemplo: <code>C:\Tools\maven-3.9.6</code>).
+            </p>
+            <p>
+                Depois, adicione o caminho da pasta <code>bin</code> ao <code>PATH</code> — no mesmo nível (usuário ou
+                sistema).
+            </p>
+
+            <h3 class="mt-4 text-danger">Erro comum: <strong>"mvn não é reconhecido como um comando"</strong></h3>
+            <img src="img/mvn.png" alt="Erro mvn não reconhecido" class="img-fluid my-3 rounded shadow-sm" />
+
+            <p>Esse erro indica que o sistema não encontrou o executável <code>mvn</code>.</p>
+
+            <ul>
+                <li>Conflito entre variáveis de usuário e de sistema</li>
+                <li>Ordem dos caminhos no <code>PATH</code></li>
+                <li>Caminho do <code>bin</code> configurado incorretamente</li>
+            </ul>
+
+            <h4>Como corrigir:</h4>
+            <ol>
+                <li>Acesse: Propriedades do Sistema → Aba "Avançado" → Variáveis de Ambiente</li>
+                <li>Verifique:
+                    <ul>
+                        <li><code>MAVEN_HOME</code> apontando para o diretório correto</li>
+                        <li><code>C:\Tools\maven-3.9.6\bin</code> adicionado ao <code>PATH</code></li>
+                    </ul>
+                </li>
+                <li>Confirme se está no nível correto: usuário ou sistema</li>
+            </ol>
+        </div>
+    </div>
+
+</body>
+
+</html>

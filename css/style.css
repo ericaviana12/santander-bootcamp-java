@@ -1,0 +1,90 @@
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f8; /* Cinza muito claro */
+    color: #2c3e50; /* Azul escuro forte */
+}
+
+/* Header estilizado com degradê suave e espaçamento */
+header {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb); /* Azul escuro para azul vibrante */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(30, 58, 138, 0.4);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+header p.lead {
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+/* Container principal */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(44, 62, 80, 0.1);
+    text-align: center;
+}
+
+/* Títulos e textos do container */
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+    font-weight: 700;
+}
+
+.container p {
+    font-size: 1.15rem;
+    margin-bottom: 40px;
+    color: #34495e;
+}
+
+/* Grupo de botões */
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.button-group .btn {
+    background-color: #2563eb; /* azul padrão */
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 3px 8px rgba(37, 99, 235, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.button-group .btn:hover {
+    background-color: #1e40af; /* azul escuro hover */
+    transform: scale(1.06);
+    box-shadow: 0 5px 15px rgba(30, 64, 175, 0.6);
+}
+
+/* Rodapé */
+footer {
+    background-color: #1e293b; /* Azul escuro quase preto */
+    color: #cbd5e1; /* Cinza claro */
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    box-shadow: 0 -3px 6px rgba(30, 41, 59, 0.7);
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Introdução ao GitHub</title>
+    <link rel="stylesheet" href="css/github.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="btn">← Voltar para página inicial</a>
+        </nav>
+        <h1>Introdução ao GitHub</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>O que é o GitHub?</h2>
+            <p>
+                GitHub é uma plataforma web para hospedagem e gerenciamento de código-fonte com sistema de controle de
+                versão usando Git, que permite colaboração, versionamento e organização de projetos de software.
+            </p>
+            <p>
+                Fundado em 2008, tornou-se a maior comunidade de desenvolvedores do mundo, com mais de 100 milhões de
+                repositórios e diversos recursos integrados para automação, documentação, integração contínua (CI/CD),
+                segurança, e muito mais.
+            </p>
+            <p>
+                Além do versionamento, o GitHub facilita o trabalho em equipe com ferramentas para revisão de código,
+                gerenciamento de projetos, rastreamento de bugs e até hospedagem de sites estáticos via GitHub Pages.
+            </p>
+        </section>
+
+        <section>
+            <h2>Principais Funcionalidades</h2>
+            <ul>
+                <li><strong>Repositórios remotos:</strong> armazenam o código na nuvem, permitindo acesso e colaboração
+                    global.</li>
+                <li><strong>Controle de versão:</strong> histórico detalhado das alterações, possibilitando reverter e
+                    comparar versões.</li>
+                <li><strong>Branches:</strong> permitem desenvolver funcionalidades isoladamente antes da integração.
+                </li>
+                <li><strong>Commits e Pull Requests:</strong> commits salvam alterações, pull requests são propostas
+                    para integrar mudanças após revisão.</li>
+                <li><strong>Issues:</strong> ferramenta para rastreamento de bugs, tarefas e discussões relacionadas ao
+                    projeto.</li>
+                <li><strong>GitHub Actions:</strong> automações configuráveis para testes, deploy, builds, etc.</li>
+                <li><strong>Wiki:</strong> área para documentar projetos e compartilhar informações importantes.</li>
+                <li><strong>GitHub Pages:</strong> hospedagem gratuita de sites estáticos diretamente dos repositórios.
+                </li>
+                <li><strong>Segurança e permissões:</strong> controle refinado de acesso, análise de vulnerabilidades e
+                    dependências.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conceitos Básicos do Git</h2>
+            <p>Git é um sistema de controle de versão distribuído criado por Linus Torvalds em 2005, fundamental para o
+                funcionamento do GitHub.</p>
+            <ul>
+                <li><strong>Repositório (repo):</strong> diretório que contém todos os arquivos e histórico do projeto.
+                </li>
+                <li><strong>Commit:</strong> snapshot do estado do projeto em um momento, com mensagem explicativa.</li>
+                <li><strong>Branch (ramo):</strong> linha independente de desenvolvimento, que permite testar recursos
+                    sem afetar a versão principal.</li>
+                <li><strong>Merge:</strong> operação que une diferentes branches, integrando as mudanças.</li>
+                <li><strong>Clone:</strong> cópia completa do repositório remoto para o computador local.</li>
+                <li><strong>Push:</strong> envio de commits locais para o repositório remoto.</li>
+                <li><strong>Pull:</strong> atualização do repositório local com as últimas alterações do remoto.</li>
+                <li><strong>Staging (git add):</strong> preparar arquivos para commit, selecionando quais serão
+                    incluídos.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Fluxo de Trabalho no GitHub</h2>
+            <p>O fluxo padrão de colaboração envolve várias etapas para garantir qualidade e controle das alterações:
+            </p>
+            <ol>
+                <li><strong>Fork:</strong> criar uma cópia independente do repositório original para sua conta pessoal
+                    no GitHub.</li>
+                <li><strong>Clone:</strong> baixar essa cópia (fork) para seu computador local para edição.</li>
+                <li><strong>Branch:</strong> criar uma ramificação específica para desenvolver uma nova funcionalidade
+                    ou correção, mantendo o branch principal limpo.</li>
+                <li><strong>Commit:</strong> salvar suas alterações localmente com mensagens claras e objetivas.</li>
+                <li><strong>Push:</strong> enviar o branch modificado para seu repositório remoto no GitHub.</li>
+                <li><strong>Pull Request (PR):</strong> solicitar que suas alterações sejam revisadas e integradas no
+                    repositório original, facilitando a revisão por outras pessoas.</li>
+                <li><strong>Discussão e revisão:</strong> comentários, sugestões e ajustes feitos durante a análise do
+                    PR para garantir qualidade.</li>
+                <li><strong>Merge:</strong> após aprovação, as mudanças são integradas ao branch principal, atualizando
+                    o projeto.</li>
+                <li><strong>Fechamento da branch:</strong> geralmente após o merge, a branch usada para a feature é
+                    excluída para manter o repositório organizado.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Comandos Git essenciais para usar com GitHub</h2>
+            <ul>
+                <li><code>git clone &lt;url&gt;</code>: Clona um repositório remoto para o computador local</li>
+                <li><code>git status</code>: Exibe o estado atual do repositório (arquivos modificados, não rastreados,
+                    etc.)</li>
+                <li><code>git add &lt;arquivo&gt;</code>: Adiciona arquivos para o próximo commit</li>
+                <li><code>git commit -m "mensagem"</code>: Salva as mudanças locais com uma mensagem descritiva</li>
+                <li><code>git push</code>: Envia os commits locais para o repositório remoto no GitHub</li>
+                <li><code>git pull</code>: Puxa as atualizações do repositório remoto para o local</li>
+                <li><code>git branch</code>: Lista as branches locais</li>
+                <li><code>git checkout &lt;branch&gt;</code>: Troca para outra branch</li>
+                <li><code>git merge &lt;branch&gt;</code>: Mescla outra branch na branch atual</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Boas Práticas no GitHub</h2>
+            <ul>
+                <li>Escreva mensagens de commit claras, diretas e descritivas, facilitando o entendimento do histórico.
+                </li>
+                <li>Use branches específicas para cada nova feature ou correção para evitar conflitos.</li>
+                <li>Mantenha o arquivo <code>README.md</code> atualizado com informações claras sobre o projeto.</li>
+                <li>Utilize <strong>issues</strong> para organizar bugs, tarefas e discussões relacionadas.</li>
+                <li>Faça revisões cuidadosas em pull requests para garantir qualidade e manter a integridade do código.
+                </li>
+                <li>Inclua documentação detalhada e comentários úteis no código.</li>
+                <li>Realize testes antes de integrar código ao branch principal para evitar problemas.</li>
+                <li>Configure automações, como GitHub Actions, para builds e testes automatizados.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Dicas para Iniciantes</h2>
+            <ul>
+                <li>Explore repositórios Open Source para aprender boas práticas de desenvolvimento e colaboração.</li>
+                <li>Pratique criando e gerenciando seus próprios projetos para ganhar experiência.</li>
+                <li>Leia a documentação oficial do <a href="https://git-scm.com/doc" target="_blank"
+                        rel="noopener noreferrer">Git</a> e do <a href="https://docs.github.com/" target="_blank"
+                        rel="noopener noreferrer">GitHub</a>.</li>
+                <li>Participe da comunidade em fóruns, grupos e eventos para tirar dúvidas e aprender novas técnicas.
+                </li>
+                <li>Use ferramentas gráficas, como <a href="https://desktop.github.com/" target="_blank"
+                        rel="noopener noreferrer">GitHub Desktop</a> ou extensões do Visual Studio Code, para facilitar
+                    o fluxo de trabalho.</li>
+                <li>Aprenda sobre integração contínua (CI) e entrega contínua (CD) para automatizar testes e deploys
+                    usando GitHub Actions.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Recursos e Links Úteis</h2>
+            <ul>
+                <li><a href="https://guides.github.com/activities/hello-world/" target="_blank"
+                        rel="noopener noreferrer">Guia Oficial: Hello World no GitHub</a></li>
+                <li><a href="https://docs.github.com/en/get-started" target="_blank"
+                        rel="noopener noreferrer">Documentação Oficial do GitHub</a></li>
+                <li><a href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener noreferrer">Livro Pro Git
+                        (gratuito)</a></li>
+                <li><a href="https://lab.github.com/" target="_blank" rel="noopener noreferrer">GitHub Learning Lab</a>
+                </li>
+                <li><a href="https://opensource.guide/pt/" target="_blank" rel="noopener noreferrer">Guia de Open
+                        Source</a></li>
+            </ul>
+        </section>
+
+        <section class="material-complementar">
+            <h3>Material complementar</h3>
+            <p>Explore os tópicos abaixo para aprofundar seus conhecimentos em Java:</p>
+            <div class="button-group">
+                <a href="/github/explicacaoDesafio.html" class="btn">Explicação do Desafio</a>
+                <a href="/github/materialApoio.html" class="btn">Material de Apoio</a>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p>© 2025 - Portal de Estudos | GitHub</p>
+    </footer>
+</body>
+
+</html>

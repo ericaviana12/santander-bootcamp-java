@@ -1,0 +1,85 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e base do site */
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+/* Container central com fundo branco e sombra */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos principais */
+h1, h2, h3 {
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Parágrafos */
+p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Links */
+a {
+  color: #0d6efd;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #084298;
+  text-decoration: underline;
+}
+
+/* Botões Bootstrap */
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+/* Rodapé (se tiver) */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+}

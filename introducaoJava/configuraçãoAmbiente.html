@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração do ambiente Java</title>
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 class="mb-4">Configuração do ambiente Java</h1>
+
+        <p><strong>Neste conteúdo, você vai aprender:</strong></p>
+        <ul>
+            <li>o que é o ambiente Java e por que configurá-lo corretamente;</li>
+            <li>quais são as principais distribuições do JDK disponíveis;</li>
+            <li>como instalar o JDK no seu sistema;</li>
+            <li>como configurar a variável de ambiente PATH para usar os comandos Java;</li>
+            <li>como verificar se a instalação foi realizada com sucesso;</li>
+            <li>quais ferramentas facilitam a gestão e troca de versões do Java.</li>
+        </ul>
+
+        <hr>
+
+        <h2>O que é o ambiente Java</h2>
+        <p>
+            O ambiente Java é o conjunto de ferramentas e configurações necessárias para escrever, compilar e executar
+            programas Java no seu computador. Ele inclui o JDK (Java Development Kit) e a configuração correta do
+            sistema para utilizar os comandos do Java.
+        </p>
+
+        <h2>Por que configurar o ambiente Java</h2>
+        <p>
+            Sem o JDK e o PATH configurados, o computador não reconhece os comandos Java, impedindo que você compile e
+            execute seus programas. Um ambiente bem configurado é essencial para programar e desenvolver em Java com
+            sucesso.
+        </p>
+
+        <hr>
+
+        <h2>Distribuições principais do JDK</h2>
+
+        <h3>Oracle JDK</h3>
+        <p>
+            Versão oficial da Oracle, usada comercialmente, com suporte e atualizações. Algumas versões exigem licença
+            para uso empresarial.
+        </p>
+
+        <h3>OpenJDK</h3>
+        <p>
+            Versão open source e gratuita do JDK, base para várias outras distribuições. É amplamente adotada pela
+            comunidade.
+        </p>
+
+        <h4>Distribuições baseadas no OpenJDK</h4>
+        <p>Entre as opções derivadas do OpenJDK, destacam-se:</p>
+        <ul>
+            <li><strong>Amazon Corretto</strong> — gratuita e com suporte da Amazon;</li>
+            <li><strong>Adoptium</strong>, <strong>Azul Zulu</strong>, <strong>BellSoft Liberica</strong>, entre outras.
+            </li>
+        </ul>
+        <p>Todas são compatíveis para o desenvolvimento e execução de aplicações Java.</p>
+
+        <hr>
+
+        <h2>Etapas básicas para a configuração</h2>
+
+        <ol>
+            <li>
+                <strong>Instalar o JDK:</strong> escolha e baixe uma distribuição compatível com seu sistema
+                operacional, como o Oracle JDK ou uma versão baseada no OpenJDK.
+            </li>
+            <li>
+                <strong>Configurar a variável de ambiente PATH:</strong>
+                <ul>
+                    <li>permite usar os comandos <code>java</code> e <code>javac</code> no terminal, em qualquer
+                        diretório;</li>
+                    <li>essencial para compilar e executar seus programas Java com facilidade.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Verificar a instalação:</strong> no terminal, digite os seguintes comandos:
+                <p><code>java -version</code><br><code>javac -version</code></p>
+                <p>Se tudo estiver correto, os comandos exibirão a versão instalada do Java.</p>
+            </li>
+        </ol>
+
+        <hr>
+
+        <h2>Ferramentas que facilitam a gestão do Java</h2>
+
+        <h3>SDKMAN! (Linux e macOS)</h3>
+        <p>
+            O SDKMAN! é uma ferramenta que permite instalar, atualizar e alternar entre versões do Java (e outras SDKs)
+            de forma simples, sem a necessidade de configurações manuais.
+        </p>
+
+        <div class="alert alert-warning" role="alert">
+            ⚠️ <strong>Windows:</strong> o SDKMAN! não está disponível oficialmente para Windows, mas você pode usar
+            gerenciadores como o <strong>Chocolatey</strong> para facilitar a instalação.
+        </div>
+    </div>
+</body>
+
+</html>

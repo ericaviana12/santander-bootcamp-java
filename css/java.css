@@ -1,0 +1,165 @@
+/* Reset básico e fonte */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  /* cinza claro da página inicial */
+  color: #3b2f2f;
+  /* texto escuro mas próximo do marrom para Java */
+}
+
+/* Header com degradê laranja (similar ao azul da página inicial) */
+header {
+  background: linear-gradient(135deg, #e07b39, #b54f23);
+  /* laranja quente degradê */
+  color: #fdf6f0;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(224, 123, 57, 0.4);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* Navegação */
+nav {
+  margin-top: 20px;
+}
+
+nav a.btn {
+  background-color: #b54f23;
+  color: #fdf6f0;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(181, 79, 35, 0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+nav a.btn:hover,
+nav a.btn:focus {
+  background-color: #8a3e1b;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(138, 62, 27, 0.7);
+  outline: none;
+}
+
+/* Main container centralizado com max-width igual à página inicial */
+main {
+  max-width: 900px;
+  margin: 30px auto 60px auto;
+  padding: 0 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(59, 47, 47, 0.1);
+}
+
+/* Sections com espaçamento e borda sutil */
+section {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0e6d8;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+section h2 {
+  color: #b54f23;
+  /* cor laranja escura */
+  font-size: 2rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e07b39;
+  padding-bottom: 6px;
+  font-weight: 700;
+}
+
+/* Listas com recuo */
+ul {
+  padding-left: 24px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #4b3b2f;
+}
+
+/* Código formatado com fundo bege suave e borda esquerda */
+pre {
+  background-color: #fff8f0;
+  color: #3b2f2f;
+  padding: 20px;
+  border-left: 5px solid #e07b39;
+  border-radius: 8px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 1rem;
+  overflow-x: auto;
+  box-shadow: 0 3px 8px rgba(224, 123, 57, 0.15);
+  line-height: 1.5;
+}
+
+code {
+  background: none;
+  color: inherit;
+}
+
+/* Extra materials centralizado com botões laranja */
+.material-complementar {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.material-complementar h3 {
+  margin-bottom: 25px;
+  color: #7a4b24;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Botões no estilo da página inicial, mas com cores laranja */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.button-group .btn {
+  background-color: #b54f23;
+  color: #fdf6f0;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(181, 79, 35, 0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.button-group .btn:hover,
+.button-group .btn:focus {
+  background-color: #8a3e1b;
+  transform: scale(1.06);
+  box-shadow: 0 6px 18px rgba(138, 62, 27, 0.7);
+  outline: none;
+}
+
+/* Footer com mesma sombra e padding da página inicial */
+footer {
+  background-color: #6a4e42;
+  color: #fdf6f0;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  box-shadow: 0 -4px 8px rgba(106, 78, 66, 0.7);
+}

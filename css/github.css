@@ -1,0 +1,189 @@
+/* Reset e fonte base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #2c3e50;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Header com degradê azul (igual página inicial) */
+header {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  padding: 40px 20px;
+  /* Reduzi de 60px para 40px */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(30, 58, 138, 0.4);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  /* Reduzi de 3rem para 2.5rem */
+  margin-bottom: 10px;
+  /* Reduzi de 15px para 10px */
+  font-weight: 700;
+}
+
+/* Navegação */
+nav {
+  max-width: 900px;
+  margin: 0.5rem auto 1.5rem auto;
+  /* Menos espaço acima e abaixo */
+  padding: 0 1rem;
+}
+
+nav a.btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  /* Reduzi padding horizontal e vertical */
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.45);
+  /* leve aumento para destaque */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+nav a.btn:hover,
+nav a.btn:focus {
+  background-color: #1e40af;
+  box-shadow: 0 6px 18px rgba(30, 64, 175, 0.7);
+  transform: scale(1.06);
+  outline: none;
+}
+
+/* Main container */
+main {
+  max-width: 900px;
+  margin: 20px auto 40px auto;
+  /* Reduzi margens top e bottom */
+  padding: 0 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(44, 62, 80, 0.1);
+}
+
+/* Sections */
+section {
+  margin-bottom: 25px;
+  /* Reduzi bastante (de 40px para 25px) */
+  padding-bottom: 8px;
+  /* Leve redução */
+  border-bottom: 1px solid #e1e4e8;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+section h2 {
+  color: #2563eb;
+  font-size: 1.7rem;
+  /* Reduzi de 2rem para 1.7rem */
+  margin-bottom: 10px;
+  /* Reduzi de 15px para 10px */
+  border-bottom: 2px solid #1e3a8a;
+  padding-bottom: 4px;
+  /* Reduzi pela metade */
+  font-weight: 700;
+}
+
+/* Listas */
+ul {
+  padding-left: 20px;
+  /* Leve redução */
+}
+
+ul li {
+  margin-bottom: 6px;
+  /* Mais compacto */
+  font-size: 1.05rem;
+  /* Reduzi um pouco */
+}
+
+/* Código */
+pre {
+  background-color: #f0f4ff;
+  color: #1e3a8a;
+  padding: 15px;
+  /* Reduzi padding */
+  border-left: 4px solid #2563eb;
+  /* Reduzi espessura da borda */
+  border-radius: 8px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.95rem;
+  /* Leve redução */
+  overflow-x: auto;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.15);
+  line-height: 1.4;
+}
+
+code {
+  background: none;
+  color: inherit;
+}
+
+/* Botões */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  /* Reduzi o espaçamento */
+  flex-wrap: wrap;
+  margin-top: 30px;
+  /* Reduzi */
+}
+
+.button-group .btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  /* Botões menores */
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  /* Reduzi */
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  user-select: none;
+  text-decoration: none;
+}
+
+.button-group .btn:hover,
+.button-group .btn:focus {
+  background-color: #1e40af;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(30, 64, 175, 0.7);
+  outline: none;
+}
+
+/* Material complementar */
+.material-complementar {
+  text-align: center;
+  margin-top: 30px;
+  /* Reduzi */
+}
+
+.material-complementar h3 {
+  margin-bottom: 15px;
+  /* Reduzi */
+  color: #1e40af;
+  font-weight: 700;
+  font-size: 1.3rem;
+  /* Reduzi */
+}
+
+/* Footer */
+footer {
+  background-color: #1e293b;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  box-shadow: 0 -3px 6px rgba(30, 41, 59, 0.7);
+}

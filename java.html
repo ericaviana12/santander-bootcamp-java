@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Introdução ao Java</title>
+    <link rel="stylesheet" href="css/java.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="btn">← Voltar para página inicial</a>
+        </nav>
+        <h1>Java</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>O que é Java?</h2>
+            <p>
+                Java é uma linguagem de programação orientada a objetos, lançada pela Sun Microsystems em 1995 e
+                atualmente mantida pela Oracle. É conhecida por sua portabilidade, robustez e grande uso no mercado
+                corporativo e mobile. Um dos maiores lemas do Java é <strong>"Write Once, Run Anywhere"</strong>
+                (Escreva uma vez, execute em qualquer lugar).
+            </p>
+        </section>
+
+        <section>
+            <h2>Características principais</h2>
+            <ul>
+                <li><strong>Portabilidade:</strong> O código Java é compilado para bytecode e executado na Java Virtual
+                    Machine (JVM), o que permite rodar o mesmo programa em diferentes plataformas.</li>
+                <li><strong>Orientação a Objetos:</strong> Baseado em classes, objetos, herança e encapsulamento — ideal
+                    para projetos organizados e escaláveis.</li>
+                <li><strong>Multithreading:</strong> Java oferece suporte nativo para execução paralela de tarefas
+                    (threads).</li>
+                <li><strong>Gerenciamento automático de memória:</strong> O Garbage Collector da JVM cuida da liberação
+                    de memória de forma automática.</li>
+                <li><strong>Ampla comunidade:</strong> Com dezenas de milhões de desenvolvedores, o Java tem um
+                    ecossistema sólido e maduro.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exemplo básico de código Java</h2>
+            <pre><code class="java">
+public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Olá, mundo!");
+  }
+}
+      </code></pre>
+            <p>Este é o exemplo mais clássico em Java, usado para mostrar a estrutura básica de uma classe com método
+                principal <code>main</code>.</p>
+        </section>
+
+        <section>
+            <h2>Onde o Java é usado?</h2>
+            <ul>
+                <li>Back-end de sistemas corporativos (Java EE / Jakarta EE)</li>
+                <li>Desenvolvimento Android (Java + Android SDK)</li>
+                <li>Sistemas bancários e financeiros (alta performance e segurança)</li>
+                <li>APIs e microsserviços com <strong>Spring Boot</strong></li>
+                <li>Internet das Coisas (IoT)</li>
+                <li>Ambientes em nuvem como AWS, GCP e Azure</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Instalação do JDK e configuração da IDE</h2>
+            <p>Para começar a programar em Java, você precisa instalar o <strong>JDK (Java Development Kit)</strong>,
+                que contém o compilador e ferramentas essenciais.</p>
+            <ul>
+                <li>
+                    <strong>Download do JDK:</strong> Acesse o site oficial da Oracle (<a
+                        href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank"
+                        rel="noopener noreferrer">Oracle Java SE</a>) ou use distribuições open source como <a
+                        href="https://adoptium.net/" target="_blank" rel="noopener noreferrer">Adoptium</a>.
+                </li>
+                <li>
+                    <strong>Configuração da variável de ambiente:</strong> Configure a variável <code>JAVA_HOME</code>
+                    para apontar para a pasta do JDK instalado.
+                </li>
+                <li>
+                    <strong>Instalação da IDE:</strong> As IDEs mais usadas são <em>IntelliJ IDEA</em>, <em>Eclipse</em>
+                    e <em>NetBeans</em>. Elas facilitam o desenvolvimento com autocompletar, debug e gerenciamento de
+                    projetos.
+                </li>
+                <li>
+                    <strong>Testando a instalação:</strong> No terminal, rode <code>java -version</code> e
+                    <code>javac -version</code> para confirmar que o JDK está instalado corretamente.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Comparação entre Maven e Gradle</h2>
+            <p>Maven e Gradle são ferramentas para gerenciar builds, dependências e execução de projetos Java.</p>
+            <ul>
+                <li><strong>Maven:</strong> Usa arquivos XML (<code>pom.xml</code>) para configuração. É tradicional,
+                    estável e tem ampla adoção.</li>
+                <li><strong>Gradle:</strong> Usa scripts em Groovy ou Kotlin (<code>build.gradle</code>). É mais
+                    flexível, rápido e moderno, com melhor suporte para builds incrementais.</li>
+            </ul>
+            <p>Ambos facilitam o download automático de bibliotecas e plugins, compilação e execução de testes.</p>
+        </section>
+
+        <section>
+            <h2>Tipos de dados, operadores, loops e condicionais</h2>
+            <h3>Tipos primitivos</h3>
+            <ul>
+                <li><code>int</code> - números inteiros (ex: 42)</li>
+                <li><code>double</code> - números de ponto flutuante (ex: 3.14)</li>
+                <li><code>char</code> - caractere único (ex: 'A')</li>
+                <li><code>boolean</code> - verdadeiro ou falso</li>
+            </ul>
+            <h3>Operadores</h3>
+            <ul>
+                <li>Aritméticos: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code></li>
+                <li>Comparação: <code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>,
+                    <code>&lt;=</code>, <code>&gt;=</code></li>
+                <li>Lógicos: <code>&&</code> (E), <code>||</code> (OU), <code>!</code> (NÃO)</li>
+            </ul>
+            <h3>Estruturas de controle</h3>
+            <pre><code class="java">
+// Condicional if-else
+if (idade >= 18) {
+  System.out.println("Maior de idade");
+} else {
+  System.out.println("Menor de idade");
+}
+
+// Loop for
+for (int i = 0; i < 5; i++) {
+  System.out.println(i);
+}
+
+// Loop while
+int contador = 0;
+while (contador < 5) {
+  System.out.println(contador);
+  contador++;
+}
+      </code></pre>
+        </section>
+
+        <section>
+            <h2>Conceitos, criação de projeto, rotas e dependências (Spring Boot)</h2>
+            <p><strong>Spring Boot</strong> é um framework para desenvolvimento rápido de aplicações Java baseadas em
+                microsserviços, APIs REST e web.</p>
+            <ul>
+                <li>Permite configurar aplicações com pouco código boilerplate</li>
+                <li>Utiliza anotações para definir rotas, serviços e injeção de dependências</li>
+                <li>Exemplo básico de controller REST:</li>
+            </ul>
+            <pre><code class="java">
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+
+  @GetMapping("/hello")
+  public String hello() {
+    return "Olá do Spring Boot!";
+  }
+}
+      </code></pre>
+            <p>Para criar um projeto Spring Boot, pode usar o <a href="https://start.spring.io/" target="_blank"
+                    rel="noopener noreferrer">Spring Initializr</a>, que gera o esqueleto com as dependências desejadas.
+            </p>
+        </section>
+
+        <section>
+            <h2>Diferenças entre Java e Kotlin no contexto Android</h2>
+            <p><strong>Java</strong> é a linguagem tradicional do Android, amplamente usada, mas com algumas limitações
+                modernas.</p>
+            <p><strong>Kotlin</strong> é uma linguagem mais concisa, segura e moderna, oficialmente suportada pelo
+                Google desde 2017 como principal linguagem para Android.</p>
+            <ul>
+                <li>Kotlin reduz a verbosidade do código, permitindo menos linhas para fazer a mesma coisa</li>
+                <li>Possui suporte nativo para programação funcional e null safety (reduz erros de referência nula)</li>
+                <li>Java tem maior base de código legado e compatibilidade</li>
+            </ul>
+            <p>Hoje, a recomendação é usar Kotlin para novos projetos Android, mas Java continua relevante para
+                manutenção e integração.</p>
+        </section>
+
+        <section class="material-complementar">
+            <h3>Material complementar</h3>
+            <p>Explore os tópicos abaixo para aprofundar seus conhecimentos em Java:</p>
+            <div class="button-group">
+                <a href="/introducaoJava/configuraçãoAmbiente.html" class="btn">Configuração do Ambiente</a>
+                <a href="/introducaoJava/gerenciadoresBuild.html" class="btn">Gerenciadores de Build</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Portal de Estudos | Java</p>
+    </footer>
+</body>
+
+</html>
